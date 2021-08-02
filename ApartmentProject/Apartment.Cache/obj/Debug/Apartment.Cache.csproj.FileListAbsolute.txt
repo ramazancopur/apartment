@@ -1,6 +1,0 @@
-C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Cache\bin\Debug\Apartment.Cache.dll
-C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Cache\bin\Debug\Apartment.Cache.pdb
-C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Cache\obj\Debug\Apartment.Cache.csprojAssemblyReference.cache
-C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Cache\obj\Debug\Apartment.Cache.csproj.CoreCompileInputs.cache
-C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Cache\obj\Debug\Apartment.Cache.dll
-C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Cache\obj\Debug\Apartment.Cache.pdb
