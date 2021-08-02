@@ -1,0 +1,6 @@
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Bll\bin\Debug\Apartment.Bll.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Bll\bin\Debug\Apartment.Bll.pdb
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Bll\obj\Debug\Apartment.Bll.csprojAssemblyReference.cache
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Bll\obj\Debug\Apartment.Bll.csproj.CoreCompileInputs.cache
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Bll\obj\Debug\Apartment.Bll.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Bll\obj\Debug\Apartment.Bll.pdb

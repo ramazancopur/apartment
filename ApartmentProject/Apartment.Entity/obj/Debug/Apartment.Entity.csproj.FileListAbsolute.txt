@@ -1,0 +1,12 @@
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\bin\Debug\Apartment.Entity.dll.config
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\bin\Debug\Apartment.Entity.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\bin\Debug\Apartment.Entity.pdb
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\bin\Debug\EntityFramework.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\bin\Debug\EntityFramework.xml
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\obj\Debug\Apartment.Entity.csprojAssemblyReference.cache
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\obj\Debug\Apartment.Entity.csproj.CoreCompileInputs.cache
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\obj\Debug\Apartment.Entity.csproj.CopyComplete
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\obj\Debug\Apartment.Entity.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Entity\obj\Debug\Apartment.Entity.pdb

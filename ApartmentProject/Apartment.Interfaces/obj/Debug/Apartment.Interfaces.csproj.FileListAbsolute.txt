@@ -1,0 +1,6 @@
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Interfaces\bin\Debug\Apartment.Interfaces.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Interfaces\bin\Debug\Apartment.Interfaces.pdb
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Interfaces\obj\Debug\Apartment.Interfaces.csprojAssemblyReference.cache
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Interfaces\obj\Debug\Apartment.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Interfaces\obj\Debug\Apartment.Interfaces.dll
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Interfaces\obj\Debug\Apartment.Interfaces.pdb
