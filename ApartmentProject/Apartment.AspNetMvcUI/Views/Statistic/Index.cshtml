@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body h3">Kullanıcı Sayısı @ViewBag.Message1</div>
+
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-warning text-white mb-4">
+                <div class="card-body h3">Elektrik Giderleri @ViewBag.Message2</div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-success text-white mb-4">
+                <div class="card-body h3">User adında "a" olan @ViewBag.Message3 kişi var</div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-danger text-white mb-4">
+                <div class="card-body h3">Danger Card @ViewBag.Message4</div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body h3">Danger Card @ViewBag.Message5</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

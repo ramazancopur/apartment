@@ -11,6 +11,7 @@ namespace Apartment.Entity.Concrete
     public class Building
     {
         [Key, ForeignKey("User")]
+        [Required(ErrorMessage = "Kullanıcı adını seçiniz")]
         public int BuildingID { get; set; }
         [StringLength(30)]
         public string Name { get; set; }
@@ -26,7 +27,7 @@ namespace Apartment.Entity.Concrete
 
 
         //User relationship  1-1
-        [Required]
+       
         public virtual User User { get; set; }
        
 

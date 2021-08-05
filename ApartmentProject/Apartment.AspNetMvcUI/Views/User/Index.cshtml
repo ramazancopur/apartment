@@ -1,43 +1,48 @@
-﻿
+﻿@using Apartment.Entity.Concrete
+@model List<User>
+
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
 
+<br />
+<br />
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>GetUserList</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-    <div> 
-        <h3>Apartment Table example</h3>
+    <div>
+        <h3>Kullanıcılar</h3>
         <br />
-        <table class="">
-
-            <tr>
-                <th>ID</th>
-                <th>User Name</th>
+        <table class="table table-bordered">
+            <tr>          
+                <th>#</th>
+                <th>Kullanıcı Adı</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>Sil</th>
+                <th>Güncelle</th>
+                <th>Apartman</th>
             </tr>
-
-            <tr>
-                <td>1</td>
-                <td>copur42s</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>copurrrr42s</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>adems42s</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>codemanes</td>
-            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>    
+                    <th>@item.UserID</th>
+                    <td>@item.UserName</td>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                    <td><a href="/User/DeleteUser/@item.UserID" class="btn btn-danger">Sil</a></td>
+                    <td><a href="/User/UpdateUser/@item.UserID" class="btn btn-warning">Güncelle</a></td>
+                    <td><a href="#" class="btn btn-primary">Apartman</a></td>    
+                </tr>
+            }
         </table>
     </div>
+    <a href="/User/AddUser" class="btn btn-info">Yeni User</a>
 </body>
 </html>

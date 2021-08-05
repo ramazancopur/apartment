@@ -1,0 +1,53 @@
+﻿@model Apartment.Entity.Concrete.User
+
+@{
+    ViewBag.Title = "UpdateUser";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddUser</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h3>Kullanıcı Güncelleme Sayfası</h3>
+        @using (Html.BeginForm("UpdateUser", "User", FormMethod.Post))
+        {
+        <div class="form-group">
+            @Html.Label("Kullanıcı ID")
+            @Html.TextBoxFor(x => x.UserID, new { @class = "form-control" , @readonly = "readonly" })
+            @Html.ValidationMessageFor(x => x.UserID)
+            <br />
+            @Html.Label("Kullanıcı Adı")
+            @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.UserName)
+            <br />
+            @Html.Label("Şifre")
+            @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Password)
+            <br />
+            @Html.Label("Email")
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Email)
+            <br />
+            @Html.Label("Ad")
+            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Name)
+            <br />
+            @Html.Label("Soyad")
+            @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Surname)
+            <br />
+            <br />
+            <button class="btn btn-primary">Güncelle</button>
+        </div>
+        }
+    </div>
+</body>
+</html>
+
+

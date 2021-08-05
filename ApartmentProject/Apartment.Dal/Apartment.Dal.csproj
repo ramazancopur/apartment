@@ -51,11 +51,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstrack\IAdminDal.cs" />
+    <Compile Include="Abstrack\IBuildingDal.cs" />
+    <Compile Include="Abstrack\ICategoryDal.cs" />
+    <Compile Include="Abstrack\ICompanyDal.cs" />
+    <Compile Include="Abstrack\ICondooFeeDal.cs" />
+    <Compile Include="Abstrack\IExpenseDal.cs" />
+    <Compile Include="Abstrack\IFlatDal.cs" />
+    <Compile Include="Abstrack\IHirerDal.cs" />
+    <Compile Include="Abstrack\IHostDal.cs" />
+    <Compile Include="Abstrack\IHostNoteDal.cs" />
+    <Compile Include="Abstrack\IReceiptDal.cs" />
     <Compile Include="Abstrack\IRepositoryDal.cs" />
     <Compile Include="Abstrack\IUserDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFContext\Context.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfAdminDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfBuildingDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfCategoryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfCompanyDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfCondooFeeDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfExpenseDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfFlatDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfHirerDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfHostDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfHostNoteDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfReceiptDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFContext\EfUserDal.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\GenericRepository.cs" />
-    <Compile Include="Concrete\EntityFramework\Repository\UserRepository.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Migrations\202108011916523_mig1.cs" />
     <Compile Include="Migrations\202108011916523_mig1.designer.cs">
@@ -68,6 +90,14 @@
     <Compile Include="Migrations\202108011931264_mig3.cs" />
     <Compile Include="Migrations\202108011931264_mig3.designer.cs">
       <DependentUpon>202108011931264_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108021235503_mig4.cs" />
+    <Compile Include="Migrations\202108021235503_mig4.designer.cs">
+      <DependentUpon>202108021235503_mig4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108041126312_mig5.cs" />
+    <Compile Include="Migrations\202108041126312_mig5.designer.cs">
+      <DependentUpon>202108041126312_mig5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108011931264_mig3.resx">
       <DependentUpon>202108011931264_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108021235503_mig4.resx">
+      <DependentUpon>202108021235503_mig4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108041126312_mig5.resx">
+      <DependentUpon>202108041126312_mig5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,7 +9,9 @@ namespace Apartment.Dal.Abstrack
 {
     public interface IUserDal:IRepositoryDal<User>
     {
-        
+        int TotalUserCount(); 
+
+        int TotalUserCount(String anyting); 
 
     }
 }

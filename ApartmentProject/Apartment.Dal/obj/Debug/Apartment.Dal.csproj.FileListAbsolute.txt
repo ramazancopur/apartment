@@ -16,3 +16,5 @@ C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Dal\obj\Debug\Apartment.D
 C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Dal\obj\Debug\Apartment.Dal.csproj.GenerateResource.cache
 C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Dal\obj\Debug\Apartment.Dal.Migrations.mig2.resources
 C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Dal\obj\Debug\Apartment.Dal.Migrations.mig3.resources
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Dal\obj\Debug\Apartment.Dal.Migrations.mig4.resources
+C:\Users\COPUR\source\repos\ApartmentProject\Apartment.Dal\obj\Debug\Apartment.Dal.Migrations.mig5.resources

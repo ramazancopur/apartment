@@ -1,4 +1,6 @@
-﻿using Apartment.Dal.Concrete.EntityFramework.Repository;
+﻿using Apartment.Bll.Abstrack;
+using Apartment.Dal.Abstrack;
+using Apartment.Dal.Concrete.EntityFramework.Repository;
 using Apartment.Entity.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,35 +10,52 @@ using System.Threading.Tasks;
 
 namespace Apartment.Bll.Concrete
 {
-    public class UserManager
+    public class UserManager : IUserService
     {
-        GenericRepository<User> repo = new GenericRepository<User>();
+        IUserDal _userDal;
 
-        public List<User> GetAllBL()
+        public UserManager(IUserDal userDal)
         {
-            return repo.List();
+            _userDal = userDal;
         }
 
-        public bool CategortAddBL(User p)
+        public void DeleteUser(User user)
         {
-            try
-            {
-                if (p.UserName == "" || p.Password.Length <= 4 || p.Surname.Length < 3)
-                {
-                    //Validation error
-                    return false;
-                }
-                else
-                {
-                    repo.Insert(p);
-                    return true;
-                }
-            }
-            catch(InvalidCastException e) 
-            {
-                Console.Write(e);
-                return false;
-            }
+            _userDal.Delete(user);
         }
+
+        public User GetByID(int id)
+        {
+            return _userDal.Get(x => x.UserID == id);
+        }
+
+        public void UpdateUser(User user)
+        {
+            _userDal.Update(user);
+        }
+
+        public void AddUser(User user)
+        {
+            _userDal.Insert(user);
+        }
+
+        public List<User> UserList()
+        {
+            return _userDal.List();
+        }
+        
+
+        //These codes aren't important
+        public int UserTableCount()
+        {
+            return _userDal.TotalUserCount();
+        }
+
+        public int UserTableCount(String anything)
+        {
+            return _userDal.TotalUserCount(anything);
+        }
+
+
     }
 }

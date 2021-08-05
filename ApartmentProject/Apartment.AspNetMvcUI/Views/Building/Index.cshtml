@@ -1,0 +1,54 @@
+﻿@using Apartment.Entity.Concrete
+@model List<Building>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetUserList</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <br />
+        <h2>Apartmanlar</h2>
+        <br />
+        <table class="table table-bordered">
+            <tr>
+                <th>#</th>
+                <th>Apartman Adı</th>
+                <th>İl</th>
+                <th>İlçe</th>
+                <th>Adres</th>
+                <th>Isınma Türü</th>
+                <th>Giderler</th>
+                <th>Daireler</th>
+                <th>Sil</th>
+                <th>Güncelle</th>
+
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>@item.BuildingID</th>
+                    <th>@item.Name</th>
+                    <td>@item.City</td>
+                    <td>@item.County</td>
+                    <td>@item.address</td>
+                    <td>@item.Heating</td>
+                    <td><a href="#" class="btn btn-primary">Giderler</a></td>
+                    <td><a href="#" class="btn btn-info">Daireler</a></td>
+                    <td><a href="/Building/DeleteBuilding/@item.BuildingID" class="btn btn-danger">Sil</a></td>
+                    <td><a href="/Building/UpdateBuilding/@item.BuildingID" class="btn btn-warning">Güncelle</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <a href="/Building/AddBuilding" class="btn btn-info">Yeni Apartman</a>
+</body>
+</html>

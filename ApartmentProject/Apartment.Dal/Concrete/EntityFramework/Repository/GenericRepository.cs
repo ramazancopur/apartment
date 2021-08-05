@@ -3,6 +3,7 @@ using Apartment.Dal.Concrete.EntityFramework.EFContext;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Apartment.Dal.Concrete.EntityFramework.Repository
 {
-    public class GenericRepository<T> : IRepositoryDal<T> where T:class
+    public class GenericRepository<T> : IRepositoryDal<T> where T : class
     {
         Context c = new Context();
 
@@ -21,20 +22,30 @@ namespace Apartment.Dal.Concrete.EntityFramework.Repository
             _object = c.Set<T>();
         }
 
-        public bool Delete(T p)
+        public void Delete(T p)
         {
-            _object.Remove(p);
-            c.SaveChanges();
-            return true;
+            var deletedEntity = c.Entry(p);
+            deletedEntity.State = EntityState.Deleted;
+
+            //_object.Remove(p);
+            c.SaveChanges();   
         }
 
-        public bool Insert(T p)
+        public T Get(Expression<Func<T, bool>> filter)
         {
-            _object.Add(p);
-            c.SaveChanges();
-            return true;
+            //just one answer
+            return _object.SingleOrDefault(filter);
         }
 
+        public void Insert(T p)
+        {
+             var addedEntity = c.Entry(p);
+             addedEntity.State = EntityState.Added;
+
+             //_object.Add(p);
+             c.SaveChanges(); 
+             
+        }
         public List<T> List()
         {
             return _object.ToList();
@@ -45,14 +56,13 @@ namespace Apartment.Dal.Concrete.EntityFramework.Repository
             return _object.Where(filter).ToList();
         }
 
-        public bool Update(T p)
+        public void Update(T p)
         {
+            var updatedEntity = c.Entry(p);
+            updatedEntity.State = EntityState.Modified;
+
             c.SaveChanges();
-            return true;
+           
         }
-
-       
-
-        
     }
 }

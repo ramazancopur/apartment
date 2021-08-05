@@ -23,7 +23,7 @@ namespace Apartment.Entity.Concrete
         public string Surname { get; set; }
 
         //Building relationship  1-1
-        [Required]
+        
         public virtual Building Building { get; set; }
 
 

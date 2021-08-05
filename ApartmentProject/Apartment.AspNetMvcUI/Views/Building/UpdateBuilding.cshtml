@@ -1,0 +1,55 @@
+﻿@model Apartment.Entity.Concrete.Building
+
+
+@{
+    ViewBag.Title = "UpdateBuilding";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Apartman Güncelle</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h3>Apartman Güncelleme Sayfası</h3>
+        @using (Html.BeginForm("UpdateBuilding", "Building", FormMethod.Post))
+        {
+            <div class="form-group">
+                @Html.Label("Yöneten Kullanıcı")
+                @Html.TextBoxFor(x => x.BuildingID, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.BuildingID)
+                <br />
+                @Html.Label("Apartman Adı")
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Name)
+                <br />
+                @Html.Label("İl")
+                @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.City)
+                <br />
+                @Html.Label("İlçe")
+                @Html.TextBoxFor(x => x.County, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.County)
+                <br />
+                @Html.Label("Adres")
+                @Html.TextBoxFor(x => x.address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.address)
+                <br />
+                @Html.Label("Isınma Türü")
+                @Html.TextBoxFor(x => x.Heating, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Heating)
+                <br />
+                <br />
+                <button class="btn btn-primary">Kaydet</button>
+            </div>
+        }
+    </div>
+</body>
+</html>
+
+
+

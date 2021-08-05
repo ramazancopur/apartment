@@ -13,11 +13,13 @@ namespace Apartment.Dal.Abstrack
 
         List<T> List(Expression<Func<T, bool>> filter);
 
-        bool Insert(T p);
+        void Insert(T p);
 
-        bool Delete(T p);
+        T Get(Expression<Func<T, bool>> filter);
 
-        bool Update(T p);
+        void Delete(T p);
+
+        void Update(T p);
 
     }
 }
